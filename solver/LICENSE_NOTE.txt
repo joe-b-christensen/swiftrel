@@ -1,0 +1,4 @@
+solver/ is a modified copy of vcftools 0.1.17 src/cpp (LGPL-3.0; Danecek, Auton et al.), with the tmpname
+off-by-one patched, plus the new swiftrel_* sources. The derived work is distributed under LGPL-3.0.
+Vendored: ISA-L v2.32.1 (commit 7c3479e, github.com/intel/isa-l), BSD-3-Clause, in solver/isa-l/ (igzip and crc
+units plus build files). One file is modified: igzip/igzip_inflate.c (see LICENSE). Requires NASM to build.

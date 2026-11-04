@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use swiftrel, please cite it as below, and also cite vcftools, whose behaviour it reproduces."
+title: "swiftrel: a byte-identical drop-in replacement for vcftools --relatedness2"
+type: software
+version: 1.0.0
+date-released: 2026-11-04
+license: LGPL-3.0-only
+repository-code: "https://github.com/joe-b-christensen/swiftrel"
+authors:
+  - family-names: Christensen
+    given-names: Joe
+    orcid: "https://orcid.org/0009-0007-0908-1299"
+    email: joechristensen@clin.au.dk
+    affiliation: "Translational Neuropsychiatry Unit (TNU), Department of Clinical Medicine, Aarhus University, Denmark"
+keywords:
+  - relatedness
+  - kinship
+  - KING
+  - vcftools
+  - performance
+abstract: >-
+  swiftrel computes the KING-robust kinship statistics of vcftools --relatedness2 with output byte-identical to
+  vcftools 0.1.17 for every supported option and thread count. On four real 1000 Genomes sets it was 470x faster
+  than vcftools, and on seven sets 6.0x faster than PLINK 2 --make-king-table run from the same VCF, which computes
+  a different estimator (geometric means, two threads, AVX-512 CPU).
+references:
+  - type: article
+    title: "The variant call format and VCFtools"
+    authors:
+      - family-names: Danecek
+        given-names: Petr
+      - name: "et al."
+    journal: Bioinformatics
+    year: 2011
+    volume: 27
+    start: 2156
+    end: 2158
+    doi: "10.1093/bioinformatics/btr330"
+  - type: article
+    title: "Robust relationship inference in genome-wide association studies"
+    authors:
+      - family-names: Manichaikul
+        given-names: Ani
+      - name: "et al."
+    journal: Bioinformatics
+    year: 2010
+    volume: 26
+    start: 2867
+    end: 2873
+    doi: "10.1093/bioinformatics/btq559"

@@ -1,0 +1,10 @@
+bench/
+ext/
+failures/
+__pycache__/
+last_eval*.json
+solver/swiftrel
+solver/obj/
+solver/isa-l/bin/
+*.relatedness2
+*.log
